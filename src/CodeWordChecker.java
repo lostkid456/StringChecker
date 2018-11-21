@@ -9,13 +9,13 @@ public class CodeWordChecker implements StringChecker{
         this.num2=num2;
         this.Word=Word;
     }
-    public CodeWordChecker(String getWord)
+    public CodeWordChecker(String Word)
     {
         this.num1=6;
         this.num2=20;
         this.Word=Word;
     }
     public boolean isValid(String str){
-        return(str.length()>num1&&)
+        return(str.length()>=num1&&str.length()<=num2&&str.indexOf(Word)!=-1);
     }
 }
